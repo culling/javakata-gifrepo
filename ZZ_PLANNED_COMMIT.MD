@@ -1,4 +1,8 @@
-# Create service to do Active Object methods
+# Replace Active Objects in servlet with Service
++ Replace constructor for servlet to one that uses service
++ Remove AO calls to make calls using .all and .add(name, url)
+
+# Create service to do Active Object methods - DONE
 + Create GifService interface with methods
    + all()
    + add(name, url)

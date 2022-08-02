@@ -13,34 +13,22 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import static com.google.common.base.Preconditions.*;
+import static com.google.common.base.Preconditions.checkNotNull;
 
 public class GifServlet extends HttpServlet {
-    @ComponentImport
-    private final ActiveObjects ao;
-
+    private final GifService gifService;
     @Inject
-    public GifServlet(ActiveObjects ao) {
-        this.ao = checkNotNull(ao);
+    public GifServlet(GifService gifService) {
+        this.gifService = checkNotNull(gifService);
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         final PrintWriter writer = response.getWriter();
         writer.write("<h1>Gifs</h1>");
-
-        ao.executeInTransaction(new TransactionCallback<Void>()
-        {
-            @Override
-            public Void doInTransaction()
-            {
-                for (Gif gif : ao.find(Gif.class))
-                {
-                    writer.printf("<p>%s <img src=\"%2$s\"/></p>", gif.getName(), gif.getUrl());
-                }
-                return null;
-            }
-        });
+        for (Gif gif : gifService.all()) {
+            writer.printf("<p>%s <img src=\"%2$s\"/></p>", gif.getName(), gif.getUrl());
+        }
         writer.close();
     }
 
@@ -48,20 +36,7 @@ public class GifServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         final String name = request.getParameter("name");
         final String url = request.getParameter("url");
-
-        ao.executeInTransaction(
-                new TransactionCallback<Gif>(){
-            @Override
-            public Gif doInTransaction()
-            {
-                final Gif gif = ao.create(Gif.class);
-                gif.setName(name);
-                gif.setUrl(url);
-                gif.save();
-                return gif;
-            }
-        });
-
+        gifService.add(name, url);
         response.sendRedirect(request.getContextPath() + "/plugins/servlet/gifrepo");
     }
 }
