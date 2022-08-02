@@ -1,10 +1,17 @@
-# Add Gif and Active Objects
+# Create service to do Active Object methods
++ Create GifService interface with methods
+   + all()
+   + add(name, url)
++ Annotate interface service as @Transactional
++ Create implementation of the service
+
+# Add Gif and Active Objects - DONE
 + Add Gif interface
 + Add Gif Service interface
 + Add Gif Service implementation
 + Add AO to atlassian-plugin.xml
 
-# Add GifServlet 
+# Add GifServlet - DONE
 + Add GifServlet
 + Add Test for response from the get endpoint
 + Add screenshot for current plugin 
