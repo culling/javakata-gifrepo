@@ -1,4 +1,17 @@
-# Replace Active Objects in servlet with Service
+# SPIKE - Implement Tests for active objects services
++ based on - https://developer.atlassian.com/server/framework/atlassian-sdk/getting-started-with-active-objects/#step-11--test-the-todo-service implement tests
+
+# Change url for rest servlet to /gifrepo/api
++ change atlassian-plugin.xml url for GifServlet
++ change tests to use new url
+
+# Create form servlet for upload
++ Add form servlet class 
++ Add servlet entry in atlassian-plugin.xml file
++ Add doGet method for servlet 
+   + Return 501 not implemented 
+
+# Replace Active Objects in servlet with Service - DONE
 + Replace constructor for servlet to one that uses service
 + Remove AO calls to make calls using .all and .add(name, url)
 
