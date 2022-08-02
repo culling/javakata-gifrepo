@@ -9,7 +9,7 @@
 
     <!-- add our i18n resource -->
     <resource type="i18n" name="i18n" location="gif-repo"/>
-    
+
     <!-- add our web resources -->
     <web-resource key="gif-repo-resources" name="gif-repo Web Resources">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
@@ -20,5 +20,9 @@
 
         <context>gif-repo</context>
     </web-resource>
-    
+
+    <servlet name="Gif Servlet" class="com.geneculling.javakata.gifrepo.GifServlet" key="gifservlet">
+        <description>A servlet to add and serve gifs</description>
+        <url-pattern>/gifrepo</url-pattern>
+    </servlet>
 </atlassian-plugin>

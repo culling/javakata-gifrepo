@@ -1,4 +1,9 @@
-# Add Google Collections dependency 
+# Add GifServlet 
++ Add GifServlet
++ Add Test for response from the get endpoint
++ Add screenshot for current plugin 
+
+# Add Google Collections dependency - DONE
 + Add additional dependencies
 
 # Add Cypress tests - DONE
