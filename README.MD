@@ -1,4 +1,7 @@
 
+# Useful Resource
++ Atlassian - Getting started with Active Objects - https://developer.atlassian.com/server/framework/atlassian-sdk/getting-started-with-active-objects/
++ Atlassian - Active Objects example repo - https://bitbucket.org/serverecosystem/ao-tutorial/src/master/
 
 # Original README instructions
 You have successfully created an Atlassian Plugin!
