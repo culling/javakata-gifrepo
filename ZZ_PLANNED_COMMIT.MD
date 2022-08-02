@@ -1,4 +1,7 @@
-# Add Cypress tests
+# Add Google Collections dependency 
++ Add additional dependencies
+
+# Add Cypress tests - DONE
 + Add package.json
 + Add cypress 
 + Add basic smoke test
