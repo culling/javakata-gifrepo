@@ -29,6 +29,6 @@
 
     <servlet name="Gif Servlet" class="com.geneculling.javakata.gifrepo.GifServlet" key="gifservlet">
         <description>A servlet to add and serve gifs</description>
-        <url-pattern>/gifrepo</url-pattern>
+        <url-pattern>/gifrepo/api/gif</url-pattern>
     </servlet>
 </atlassian-plugin>

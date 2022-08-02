@@ -37,6 +37,6 @@ public class GifServlet extends HttpServlet {
         final String name = request.getParameter("name");
         final String url = request.getParameter("url");
         gifService.add(name, url);
-        response.sendRedirect(request.getContextPath() + "/plugins/servlet/gifrepo");
+        response.sendRedirect(request.getContextPath() + "/plugins/servlet/gifrepo/api/gif");
     }
 }
