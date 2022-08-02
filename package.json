@@ -1,0 +1,20 @@
+{
+  "name": "javakata-gifrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "null",
+  "scripts": {
+    "build": "atlas-mvn package -DskipTests",
+    "build:watch": "nodemon --exec npm run build",
+    "clean": "rmdir /s /q target node_modules",
+    "continue": "atlas-mvn confluence:debug",
+    "start": "atlas-mvn clean confluence:debug",
+    "pretest": "npm install",
+    "test": "node_modules/.bin/cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "9.5.3"
+  }
+}
