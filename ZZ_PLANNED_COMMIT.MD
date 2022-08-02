@@ -10,7 +10,7 @@
    + Return 501 not implemented 
 
 
-# Change url for rest servlet to /gifrepo/api
+# Change url for rest servlet to /gifrepo/api - DONE
 + change atlassian-plugin.xml url for GifServlet
 + change tests to use new url
 
