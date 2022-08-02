@@ -1,3 +1,9 @@
+# Add Gif and Active Objects
++ Add Gif interface
++ Add Gif Service interface
++ Add Gif Service implementation
++ Add AO to atlassian-plugin.xml
+
 # Add GifServlet 
 + Add GifServlet
 + Add Test for response from the get endpoint
