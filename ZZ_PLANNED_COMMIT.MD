@@ -1,8 +1,16 @@
 # SPIKE - Implement Tests for active objects services
 + based on - https://developer.atlassian.com/server/framework/atlassian-sdk/getting-started-with-active-objects/#step-11--test-the-todo-service implement tests
 
+# Create and serve home.vm form for POST details
++ Use renderer to send home.vm 
++ Add form to home.vm to POST to /gifrepo/api
++ Form Fields
+   + name
+   + url
++ Add test for form via cypress
 
-# Create form servlet for upload
+
+# Create form servlet for upload - DONE
 + Add form servlet class 
 + Add servlet entry in atlassian-plugin.xml file
    + set url to /gifrepo

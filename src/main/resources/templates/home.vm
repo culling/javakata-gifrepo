@@ -1,1 +1,16 @@
-<h1>PLACEHOLDER</h1>
+<h1>Add Gif</h1>
+<form class="aui" id="gif-upload-form" method="POST" action="$contextPath/plugins/servlet/gifrepo/api/gif">
+    <div class="field-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" class="text" name="name" placeholder="name">
+    </div>
+    <div class="field-group">
+        <label for="url">Url</label>
+        <input id="url" type="text" class="text" name="url" placeholder="url">
+    </div>
+    <div class="buttons-container">
+        <div class="buttons">
+            <input type="submit" class="aui-button aui-button-primary" id="save-gif">Save</input>
+        </div>
+    </div>
+</form>

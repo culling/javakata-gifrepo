@@ -27,9 +27,9 @@ public class GifFormServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Map<String, Object> map = new HashMap<>();
-//        renderer.render("templates/home.vm", map, response.getWriter());
-//        response.flushBuffer();
-        response.sendError(501, "form not yet implemented");
+        map.put("contextPath", request.getContextPath());
+        renderer.render("templates/home.vm", map, response.getWriter());
+        response.flushBuffer();
     }
 
 }
