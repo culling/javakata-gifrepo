@@ -1,7 +1,8 @@
-package com.geneculling.javakata.gifrepo;
+package com.geneculling.javakata.gifrepo.servlets;
 
 import com.atlassian.plugin.spring.scanner.annotation.imports.ComponentImport;
 import com.atlassian.templaterenderer.TemplateRenderer;
+import com.geneculling.javakata.gifrepo.GifService;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServlet;

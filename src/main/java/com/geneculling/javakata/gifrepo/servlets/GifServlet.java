@@ -1,8 +1,10 @@
-package com.geneculling.javakata.gifrepo;
+package com.geneculling.javakata.gifrepo.servlets;
 
 import com.atlassian.activeobjects.external.ActiveObjects;
 import com.atlassian.plugin.spring.scanner.annotation.imports.ComponentImport;
 import com.atlassian.sal.api.transaction.TransactionCallback;
+import com.geneculling.javakata.gifrepo.Gif;
+import com.geneculling.javakata.gifrepo.GifService;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
