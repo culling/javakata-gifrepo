@@ -18,8 +18,7 @@ public class GifServiceImpl implements GifService{
     private final ActiveObjects ao;
 
     @Inject
-    public GifServiceImpl(ActiveObjects ao)
-    {
+    public GifServiceImpl(ActiveObjects ao) {
         this.ao = checkNotNull(ao);
     }
 
@@ -35,5 +34,10 @@ public class GifServiceImpl implements GifService{
     @Override
     public List<Gif> all() {
         return newArrayList(ao.find(Gif.class));
+    }
+
+    @Override
+    public void clear(){
+        ao.delete(ao.find(Gif.class));
     }
 }

@@ -1,7 +1,7 @@
 # SPIKE - Implement Tests for active objects services
 + based on - https://developer.atlassian.com/server/framework/atlassian-sdk/getting-started-with-active-objects/#step-11--test-the-todo-service implement tests
 
-# Create and serve home.vm form for POST details
+# Create and serve home.vm form for POST details - DONE
 + Use renderer to send home.vm 
 + Add form to home.vm to POST to /gifrepo/api
 + Form Fields
