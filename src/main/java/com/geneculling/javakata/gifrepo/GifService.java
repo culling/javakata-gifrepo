@@ -8,4 +8,5 @@ import java.util.List;
 public interface GifService {
     Gif add(String name, String url);
     List<Gif> all();
+    void clear();
 }
