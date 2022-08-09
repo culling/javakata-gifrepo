@@ -72,8 +72,7 @@ public class GifServiceImplTest {
 
     public static class GifServiceImplTestDatabaseUpdater implements DatabaseUpdater {
         @Override
-        public void update(EntityManager entityManager) throws Exception
-        {
+        public void update(EntityManager entityManager) throws Exception {
             entityManager.migrate(Gif.class);
 
             final Gif gif = entityManager.create(Gif.class);
