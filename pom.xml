@@ -23,7 +23,7 @@
         <plugin.testrunner.version>2.0.2</plugin.testrunner.version>
         <atlassian.spring.scanner.version>2.1.7</atlassian.spring.scanner.version>
         <!-- <ao.version>4.0.3</ao.version> -->
-        <ao.version>2.0.0</ao.version>
+        <ao.version>1.2.3</ao.version>
 
         <!-- This property ensures consistency between the key in atlassian-plugin.xml and the OSGi bundle's key. -->
         <atlassian.plugin.key>${project.groupId}.${project.artifactId}</atlassian.plugin.key>
@@ -105,13 +105,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Google Collections, useful utilities for manipulating collections -->
-        <dependency>
-            <groupId>com.google.collections</groupId>
-            <artifactId>google-collections</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
