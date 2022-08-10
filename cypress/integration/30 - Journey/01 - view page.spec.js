@@ -6,7 +6,7 @@ describe("visit", () => {
     it("should be able to view the page", () => {
         cy.visit({
             url: `/plugins/servlet/gifrepo`,
-            failOnStatusCode: false
+            failOnStatusCode: true
         });
         cy.screenshot({
             name: 'visit',

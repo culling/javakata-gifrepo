@@ -29,8 +29,9 @@
 
     <servlet name="Gif Servlet" class="com.geneculling.javakata.gifrepo.servlets.GifServlet" key="gifservlet">
         <description>A servlet to add and serve gifs</description>
-        <url-pattern>/gifrepo/api/gif</url-pattern>
+        <url-pattern>/gifrepo/api/gif*</url-pattern>
     </servlet>
+
     <servlet name="Gif Form Servlet" class="com.geneculling.javakata.gifrepo.servlets.GifFormServlet" key="gifformservlet">
         <url-pattern>/gifrepo</url-pattern>
     </servlet>
